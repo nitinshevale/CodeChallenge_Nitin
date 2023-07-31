@@ -1,0 +1,106 @@
+﻿@model Customer
+@{
+    ViewData["Title"] = "Edit Customer";
+}
+
+@section Scripts
+{
+
+    @if (Model != null)
+    {
+<script>
+        $(document).ready(function () {
+            console.log("@Model.id");
+            $("input#field_firstName").attr("value", "@Model.firstName");
+            $("input#field_lastName").attr("value", "@Model.lastName");
+            $("input#field_email").attr("value", "@Model.email");
+            $("input#field_phone").attr("value", "@Model.phone_number".replace("&#x2B;", "+"));
+            $("input#field_balance").attr("value", "@Model.balance");
+            if ("@Model.phone_number".replace("&#x2B;", "+").includes("+46")) {
+                $("option#region_se").attr("selected", "selected");
+                $("option#region_us").attr("selected", "");
+            }
+            if ("@Model.gender" == "f") {
+                $("option#f").attr("selected", "selected");
+                $("option#m").attr("selected", "");
+            }
+
+            $("#headerMain").html("Edit Customer");
+            $(".description").html("Modify an existing Customer. Edit the details below, then press <b>Submit</b> to create a POST request to the API. The server will then update this Customer");
+        });
+</script>
+    }
+    else
+    {
+        <script>
+        $(document).ready(function () {
+            console.log("No Model Present");
+        });
+        </script>
+    }
+
+}
+
+<div class="text-center">
+
+    <h4 id="headerMain" class="headerMain">Create New Customer</h4>
+
+    <div>
+        <label class="description">
+            Add new Customer. Enter the required details below, then press <b>Submit</b> to create a POST request to the API. The server will then create a Customer.
+        </label>
+    </div>
+
+    <div class="customerForm">
+        <form id="customerFormSubmit" method="post">
+            <div class="form-group">
+                <label class="form_font" for="firstname" id="form_firstName">First Name</label>
+                <input id="field_firstName" class="form-control" type="text"
+                       name="firstname" placeholder="Enter your first name"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label class="form_font" for="lastname" id="form_lastName">Last Name</label>
+                <input id="field_lastName" class="form-control" type="text"
+                       name="lastname" placeholder="Enter your last name"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label class="form_font" style="color:red">*</label>
+                <label class="form_font" for="email" id="form_email">Email</label>
+                <input id="field_email" class="form-control" type="text"
+                       name="email" placeholder="Enter your email address"
+                       value="">
+            </div>
+            <div class="form-group">
+                <label class="form_font" for="phone" id="form_phone">Phone Number</label>
+                <div class="input-group" id="field_phone_input">
+                    <select id="field_country" class="form-control" name="country">
+                        <option id="region_us" selected>US +1</option>
+                        <option id="region_se">SE +46</option>
+                    </select>
+                    <input id="field_phone" class="form-control" type="text"
+                           name="phone" placeholder="Enter your phone number"
+                           value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form_font">Gender</label>
+                <div>
+                    <select id="field_gender" class="form-control" name="gender">
+                        <option id="m" selected>Male</option>
+                        <option id="f">Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="form_font" for="balance" id="form_balance">Balance Amount</label>
+                <input id="field_balance" class="form-control" type="text"
+                       name="balance" placeholder="Enter balance amount in USD"
+                       value="">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+
+</div>

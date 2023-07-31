@@ -1,0 +1,179 @@
+﻿a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: #222;
+}
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.navbar-light .navbar-brand {
+    color: #D8D8D8 !important;
+    font-family: 'Arial Rounded MT';
+    font: bold;
+}
+
+    .navbar-light .navbar-brand :focus {
+        color: #D8D8D8 !important;
+    }
+
+.navbar-light .navbar-item {
+    color: #D8D8D8 !important;
+    font-family: 'Arial Rounded MT';
+    font: bold;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+    border-top: 2px solid #bebebe !important;
+}
+.border-bottom {
+    border-bottom: 2px solid #bebebe !important;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: Arial;
+    font-size: 10pt;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+  color:black;
+}
+
+/* Custom CSS */
+
+.center-content {
+    margin-left: auto;
+    margin-right: auto;
+    width:auto;
+}
+
+table {
+    border: 0.5px solid #6f6f6f;
+    border-collapse: collapse;
+    empty-cells: hide;
+}
+
+    table th {
+        background-color: #1b6ec2;
+        color: #333;
+        font-weight: bold;
+        margin: 2px;
+    }
+
+    table th, table td {
+        padding: 10px;
+        border-color: #6f6f6f;
+        color: #d8d8d8;
+    }
+
+    .customerTable {
+        margin-bottom: 10px;
+        width:100%;
+    }
+
+    .customerTable tbody {
+        display: block;
+        height: 500px;
+        overflow: auto;
+    }
+
+/* Customer Form */
+
+.customerForm {
+    margin-top: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align:left;
+}
+
+.error {
+    color:red;
+}
+
+.errorField {
+    border-color: red;
+}
+
+.form_font{
+    font-size:18px;
+}
+
+
+#field_phone {
+    width:60%;
+}
+
+/*  Additional Styling */
+.form-control {
+    background-color: #222;
+    color: #D8D8D8;
+}
+
+    .form-control:focus {
+        background-color: #222;
+        color: #D8D8D8;
+    }
+
+.headerMain{
+    margin-top:3%;
+    font-size:40px;
+}
+
+.disclaimer {
+    margin-top: 3%;
+}
+
+    .disclaimer b {
+        color: wheat;
+    }
+
+.description {
+    margin-top: 0%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: justify;
+}
+
+    .description b {
+        color: wheat;
+    }

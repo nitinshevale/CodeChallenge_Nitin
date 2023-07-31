@@ -1,0 +1,269 @@
+﻿a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+    color: #222;
+}
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #6923f4;
+  border-color: #6923f4;
+}
+
+    .btn-primary:hover {
+        color: #fff;
+        background-color: #8348f7;
+        border-color: #8348f7 !important;
+    }
+
+    .btn-primary:focus {
+        color: #fff;
+        outline: 0 !important;
+        background-color: #8348f7 !important;
+        border-color: #8348f7 !important;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6) !important;
+        ;
+    }
+
+    .btn-primary:active {
+        color: #fff;
+        outline: 0 !important;
+        background-color: #8348f7 !important;
+        border-color: #8348f7 !important;
+    }
+
+.btn-secondary {
+    font-family:Arial;
+    font:bold;
+    font-weight:bolder;
+    color: #222 !important;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+    .btn-secondary:hover {
+        font: bold;
+        color: #222 !important;
+        background-color: #fff;
+        border-color: #222;
+    }
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.navbar-light .navbar-brand {
+    color: #f44e27 !important;
+    font-family: 'Arial Rounded MT';
+    font: bold;
+}
+
+    .navbar-light .navbar-brand :focus {
+        color: #D8D8D8 !important;
+    }
+
+.navbar-light .navbar-item {
+    color: #D8D8D8 !important;
+    font-family: 'Arial Rounded MT';
+    font: bold;
+}
+
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+    border-top: 2px solid #bebebe !important;
+}
+.border-bottom {
+    border-bottom: 2px solid #bebebe !important;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    font-family: Arial;
+    font-size: 10pt;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+  color:white;
+  background-color:white;
+}
+
+/* Custom CSS */
+
+.center-content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border: 0.5px solid #6f6f6f;
+    border-collapse: collapse;
+    empty-cells: hide;
+    width:100%;
+}
+
+    table th {
+        background-color: #6923f4;
+        color: #333;
+        font-weight: bold;
+        margin: 2px;
+    }
+
+    table th, table td {
+        padding-left: 0.7rem;
+        padding-right: 0.7rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border-color: #6f6f6f;
+        color: #d8d8d8;
+    }
+
+  /*  .customerTable {
+        margin-bottom: 10px;
+        width:100%;
+    }*/
+
+    .customerTable tbody {
+        display: block;
+        height: auto;
+        overflow-y: auto;
+        max-width:100%;
+    }
+
+/* Customer Form */
+
+.customerForm {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align:left;
+}
+
+.error {
+    color:red;
+}
+
+.errorField {
+    border-color: red;
+}
+
+.form_font{
+    font-size:18px;
+}
+
+
+#field_phone {
+    width:60%;
+}
+
+/*  Additional Styling */
+.form-control {
+    background-color: transparent;
+    color: #D8D8D8;
+}
+
+    .form-control:focus {
+        background-color: transparent;
+        color: #D8D8D8;
+    }
+
+.headerMain{
+    margin-top:3%;
+    font-size:40px;
+}
+
+#headerItem {
+    background-color: white !important;
+}
+
+.disclaimer {
+    margin-top: 3%;
+    color:#aeaeae
+}
+
+    .disclaimer b {
+        color: #8852f5
+    }
+
+.description {
+    margin-top: 0%;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: justify;
+}
+
+    .description b {
+        color: #8852f5
+    }
+
+.logo_image {
+    width:80%;
+    height:80%;
+}
+
+.footer_bold {
+    font-family: 'Arial Rounded MT';
+    font: bold;
+    font-weight: bolder;
+    color: #222;
+    font-size:14px !important;
+}
+
+.modal-body {
+    color: #222 !important;
+    font-size: 14px;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.modal-title {
+    margin: 0px !important;
+}
+
+.modal-header {
+    font-family: 'Arial Rounded MT';
+    font: bold;
+    font-weight: bolder;
+    color: #222 !important;
+    border-bottom: 0px !important;
+}
+
+.modal-footer {
+    border-top: 0px !important;
+}
+
+option {
+    color:#222;
+}

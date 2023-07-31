@@ -1,0 +1,69 @@
+﻿@model CustomerListModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Scripts
+{
+    <script>
+
+        console.log("Fetching Table...");
+
+        var customers = new Array();
+        customers.push(["Customer Id", "First Name", "Last Name", "Email", "Int. Phone Number", "Country Code", "Gender", "Balance Total"]);
+
+        @foreach (var customer in Model.Customers)
+        {
+           @:customers.push(["@customer.id", "@customer.firstName", "@customer.lastName", "@customer.email", "@customer.phone_number", "@customer.country_code".toUpperCase(),"@customer.gender".toUpperCase(),"$@customer.balance"]);
+        }
+
+        console.log(customers)
+
+        GenerateTable(customers);
+
+    </script>
+}
+
+@if (Model.ErrorMessage == null)
+{
+    <div id="bootstrap_alert" class="alert alert-success" role="alert">
+    </div>
+    @*<div class="center-content">*@
+        <div id="customerTable">
+        </div>
+    @*</div>*@
+}
+else if (Model.ErrorMessage != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @Model.ErrorMessage
+    </div>
+}
+else
+{
+    <div class="alert alert-danger" role="alert">
+        Error Fetching Table
+    </div>
+}
+
+<button id="Create_Customer" class="btn btn-primary" type="submit">Create Customer</button>
+<button id="Reset_Table" class="btn btn-primary" type="submit">Reset Table</button>
+
+
+
+<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalTitle">Delete Customer</h5>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete this Customer from the server? This process cannot be undone.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button id="Modal_Delete_Button" customer_id="" class="btn btn-primary" type="submit">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
